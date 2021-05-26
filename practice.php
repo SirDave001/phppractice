@@ -84,7 +84,21 @@ myTest();
 echo $y; //outputs 15
 
 #static
+//static keyword is used when a variable is still needed and does not want to be deleted when the action of the function is completed.
+function myTest() {
+    static $x = 0;
+    echo $x;
+    $x++;
+  }
 
+  myTest();
+  echo "<br>";
+  myTest();
+  echo "<br>";
+  myTest();
+  echo "<br>";
+  myTest();
+  ?>
 ?>
 
 </body>
