@@ -291,6 +291,40 @@ $x = "23465.768";
 $int_cast = (int)$x
 echo $int_cast;
 
+#PHP Math
+
+//php pi() function. it returns the value of PI
+echo(pi()) //returns 3.1415926535898
+
+//php min() and max() functions
+//it can be used to find the lowest or the highest value in a list of arguments
+echo(min(0, 23, 456, 67, -21, -450)) //returns -450
+echo(max(0, 23, 456, 67, -21, -450)) //returns 456
+
+//PHP abs() function
+//it returns the absolute (positive) value of a number
+echo(abs(-67.3)); //returns 67.3
+
+//PHP sqrt() function
+//this function returns the square root of a number
+echo(sqrt(64)); //returns 8
+
+//PHP round() function
+//this function rounds a floating number to its nearest integer
+echo(round(0.60)); //returns 1
+echo(round(0.49)) //returns 0
+
+//random numbers
+//the rand( function generates a random number)
+echo(rand());
+//to get a range in the rand() function
+echo(rand(1-1000)); //set a range
+
+
+
+
+
+
 
 
 
