@@ -320,9 +320,43 @@ echo(rand());
 //to get a range in the rand() function
 echo(rand(1-1000)); //set a range
 
+#PHP CONSTANTS
+//constants are like variables except that once they are defined they cannot be changed or undefined
+//a constant is an identifier (name) for a simple value. the value cannot be changed during the script. a valid constant name starts with a letter or underscore(no $ sign before the constant name).
+//note: unlike variables, constants are automatically global across the entire script
 
+//creating a php constant. to create a constant, use the define() function.
+//syntax= define(name, value, case-sensitive)
+/*parameters
+1. name: Specifies the name of the constant
+2. value: Specifies the value of the constant
+3. case-insensitive: Specifies whether the constant name should be case-insensitive. Default is false */
 
+define("GREETING", "Welcome to W3Schools.com!");
+echo GREETING;
 
+//case-sensitivity set to true
+define("GREETING", "Welcome to W3Schools.com!", true);
+echo greeting;
+
+//PHP Constant Arrays
+//In PHP7, you can create an Array constant using the define() function.
+
+define("cars", [
+  "Alfa Romeo",
+  "BMW",
+  "Toyota"
+]);
+echo cars[0]; //returns alfa romeo
+
+//constants are global. constants are automatically global and can be used across the entire script
+//the blow example uses a constant inside a function, even if its defined outside the function
+define("GREETING", "Welcome to SirDave TECH!");
+function myphp() {
+  echo GREETING
+}
+
+myphp()
 
 
 
