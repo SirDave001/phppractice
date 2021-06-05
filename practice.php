@@ -232,6 +232,73 @@ echo str_replace("world", "Dolly", "Hello World!"); //outputs "Hello Dolly!"
 //Complete PHP String reference
 //Was referred to php string reference page
 
+#PHP Numbers
+//One thing to know about PhP is that it provides automatic data type conversion.
+//so if you assign an integer value to a variable, the type of that variable will automatically be an integer. Then, if you assign a string to the same variable, the data type will change to a string.
+//This automatic conversion can sometimes break your <code class code.
+
+//PHP integers
+//2, 256, -256, 10358, -179567 are all integers. An interger is a number without any decimal part. An integer data type is a non-decimal number between -2147483648 and 2147483647 in 32 bit systems, and between -9223372036854775808 and 9223372036854775807 in 64 bit systems. A value greater(or lower) than this, will be stored as float, because it exceeds the limit of an integer.
+//4*2.5 is 10 and will be sored as float, cos one of the operands is a float.
+$x = 4536;
+var_dump(is_int($x));
+
+$x = 59.85;
+var_dump(is_int($x));
+
+//PHP floats
+//a float is a number with decimal point or in a exponential form, e.g 2.0, 234.54, 2872.345, 34.342E-3 are all floats.
+// the float data type can  commonly store a value up to1.7976931348623E+308(platform dependent), and have a maximum precision of 14 digits.
+$x = 10.365;
+var_dump(is_float($x));
+
+//PHP infinity
+//A numeric value that is larger than PHP_FLOAT_MAX is considered infinite.
+$x 1.4e765
+var_dump($x);
+
+//PHP NaN
+//NaN stands for Not a Number. it is used for impossible mathematical operations.
+//invalid calculations will return a NaN value
+$x = acos(8);
+var_dump($x);
+
+//PHP numerical strings
+//the PHP is_numeric() function can be used to find if a variable is numeric. the function returns true if the variable is a number or a numeric string, false if otherwise.
+$x = 5958;
+var_dump(is_numeric($x));
+
+$x = "5958";
+var_dump(is_numeric($x));
+
+$x = "59.58" + 100;
+var_dump(is_numeric($x));
+
+$x = "Hello";
+var_dump(is_numeric($x));
+
+//PHP casting strings and floats to integers
+//sometimes you need to cast a numerical value into another data type.
+//the int(), (integer) or the intval() function are often used to convert a value to an integer.
+$x = 23465.768;
+$int_cast = (int)$x;
+echo $int_cast;
+
+echo "<br>";
+
+//cast string to int
+$x = "23465.768";
+$int_cast = (int)$x
+echo $int_cast;
+
+
+
+
+
+
+
+
+
 
 
 
