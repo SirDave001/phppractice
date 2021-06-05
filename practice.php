@@ -212,9 +212,25 @@ var_dump($x);
 //A common example of using the resource data type is a database call.
 //We will not talk about the resource type here, since it is an advanced topic.
 
+#PhP Strings
+//strlen() returns the length a string
+echo strlen("Hello world!"); // outputs 12
 
+//str_word_count() - Count Words in a String
+echo str_word_count("Hello world!"); // outputs 2
 
+//strrev() - Reverse a String
+echo strrev("Hello world!"); // outputs !dlrow olleH
 
+//strpos() - Search For a Text Within a String
+echo strpos("Hello world!", "world"); // outputs 6
+
+//str_replace() - Replace Text Within a String
+//replace the text 'world" with "Dolly"
+echo str_replace("world", "Dolly", "Hello World!"); //outputs "Hello Dolly!"
+
+//Complete PHP String reference
+//Was referred to php string reference page
 
 
 
