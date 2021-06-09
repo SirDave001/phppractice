@@ -460,14 +460,83 @@ $user = "John Doe";
 echo $status = (empty($user)) ? "anonymous" : "logged in";
 
 
+/* PHP IF AND ELSE STATEMENTS
+Conditional statements are used to perform different actions based on different conditions.
+--if statement - executes some code if one condition is true
+--if...else statement - executes some code if a condition is true and another code if that condition is false
+--if...elseif...else statement - executes different codes for more than two conditions
+--switch statement - selects one of many blocks of code to be executed
+Example
+Output "Have a good day!" if the current time (HOUR) is less than 20: */
 
+$t = date("H");
 
+if ($t < "20") {
+  echo "Have a good day!";
+}
+/*PHP - The if Statement
+The if statement executes some code if one condition is true.
+Syntax
+if (condition) {
+  code to be executed if condition is true;
+}
+Example
+Output "Have a good day!" if the current time (HOUR) is less than 20:*/
 
+$t = date(class="phpstringcolor" style="color:brown">"H");
+class="phpnumbercolor" style="color:red">
+class="phpkeywordcolor" style="color:mediumblue">if ($t < class="phpstringcolor" style="color:brown">"20") {
+class="phpnumbercolor" style="color:red">   class="phpkeywordcolor" style="color:mediumblue">echo class="phpstringcolor" style="color:brown">"Have a good day!";
+class="phpnumbercolor" style="color:red"> }
+class="phptagcolor" style="color:red">
 
+/*PHP - The if...else Statement
+The if...else statement executes some code if a condition is true and another code if that condition is false.
+Syntax
+if (condition) {
+  code to be executed if condition is true;
+}
+else {
+  code to be executed if condition is false;
+}
+Example
+Output "Have a good day!" if the current time (HOUR) is less than 20:*/
 
+$t = date(class="phpstringcolor" style="color:brown">"H");
 
+class="phpkeywordcolor" style="color:mediumblue">if ($t < class="phpstringcolor" style="color:brown">"20") {
+class="phpnumbercolor" style="color:red">   class="phpkeywordcolor" style="color:mediumblue">echo class="phpstringcolor" style="color:brown">"Have a good day!";
+class="phpnumbercolor" style="color:red"> } class="phpkeywordcolor" style="color:mediumblue">else {
+class="phpnumbercolor" style="color:red">   class="phpkeywordcolor" style="color:mediumblue">echo class="phpstringcolor" style="color:brown">"Have a good night!";
+class="phpnumbercolor" style="color:red"> }
+class="phptagcolor" style="color:red">
 
+/*PHP - The if...elseif...else Statement
+The if...elseif...else statement executes different codes for more than two conditions.
+Syntax
+if (condition) {
+  code to be executed if this condition is true;
+} elseif (condition) {
+  code to be executed if first condition is false and this condition is true;
+} else {
+  code to be executed if all conditions are false;
+}
+Example
+Output "Have a good morning!" if the current time is less than 10, and "Have a good day!" if the current time is less than 20. Otherwise it will output "Have a good night!":*/
 
+$t = date(class="phpstringcolor" style="color:brown">"H");
+class="phpnumbercolor" style="color:red">
+class="phpkeywordcolor" style="color:mediumblue">if ($t < class="phpstringcolor" style="color:brown">"10") {
+class="phpnumbercolor" style="color:red">   class="phpkeywordcolor" style="color:mediumblue">echo class="phpstringcolor" style="color:brown">"Have a good morning!";
+class="phpnumbercolor" style="color:red"> } class="phpkeywordcolor" style="color:mediumblue">elseif ($t < class="phpstringcolor" style="color:brown">"20") {
+class="phpnumbercolor" style="color:red">   class="phpkeywordcolor" style="color:mediumblue">echo class="phpstringcolor" style="color:brown">"Have a good day!";
+class="phpnumbercolor" style="color:red"> } class="phpkeywordcolor" style="color:mediumblue">else {
+class="phpnumbercolor" style="color:red">   class="phpkeywordcolor" style="color:mediumblue">echo class="phpstringcolor" style="color:brown">"Have a good night!";
+class="phpnumbercolor" style="color:red"> }
+class="phptagcolor" style="color:red">
+
+/*PHP - The switch Statement
+The switch statement will be explained in the next chapter */
 
 
 
